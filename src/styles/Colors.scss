@@ -1,0 +1,32 @@
+$primary-color: #F25A52;
+$secondary-color: #343434;
+$secondary-color-light: #404040;
+$tertiary-color: #F4F4F4;
+
+.primary-color {
+  color: $primary-color
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.tertiary-color {
+  color: $tertiary-color;
+}
+
+.primary-background-color {
+  background-color: $primary-color;
+}
+
+.secondary-background-color {
+  background-color: $secondary-color;
+}
+
+.secondary-background-color-light {
+  background-color: $secondary-color-light;
+}
+
+.tertiary-background-color {
+  background-color: $tertiary-color;
+}
