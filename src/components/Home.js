@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedIn from '@mui/icons-material/LinkedIn';
+import Telegram from '@mui/icons-material/Telegram';
 import Email from '@mui/icons-material/Email';
 
 const Home = () => {
@@ -46,7 +47,10 @@ const Home = () => {
             <IconButton aria-label="LinkedIn" color="primary" sx={{ transform: 'scale(1.5)' }} href="https://www.linkedin.com/in/timothy-yu-a2c4d5e8/">
               <LinkedIn />
             </IconButton>
-            <IconButton aria-label="LinkedIn" color="tertiary" sx={{ transform: 'scale(1.5)' }} href="mailto:kyzurea@gmail.com">
+            <IconButton aria-label="Telegram" color="tertiary" sx={{ transform: 'scale(1.5)' }} href="https://t.me/kyzure">
+              <Telegram />
+            </IconButton>
+            <IconButton aria-label="Email" color="primary" sx={{ transform: 'scale(1.5)' }} href="mailto:kyzurea@gmail.com">
               <Email />
             </IconButton>
           </Stack>
