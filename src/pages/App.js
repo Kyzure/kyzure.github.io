@@ -4,8 +4,10 @@ import '../styles/Colors.scss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Header from '../components/Header.js';
 import Home from '../components/Home.js';
-import Experience from '../components/Experience.js';
 import About from '../components/About.js';
+import Experience from '../components/Experience.js';
+import Projects from '../components/Projects.js';
+import Contact from '../components/Contact.js';
 
 const theme = createTheme({
   palette: {
@@ -20,6 +22,10 @@ const theme = createTheme({
     tertiary: {
       main: '#F4F4F4',
       dark: '#EFEFEF'
+    },
+    text: {
+      light: '#C8C8C8',
+      main: '#888888'
     }
   }
 });
@@ -32,8 +38,10 @@ function App() {
       </div>
       <div className="secondary-background-color-light">
         <Home/>
-        <Experience/>
         <About/>
+        <Experience/>
+        <Projects/>
+        <Contact/>
       </div>
     </ThemeProvider>
   );

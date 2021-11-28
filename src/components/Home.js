@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/Colors.scss'
-import '../styles/Home.scss'
+import '../styles/Section.scss'
 import Nature from '../assets/Nature.jpg'
 
 import Box from '@mui/material/Box';
@@ -20,13 +20,13 @@ const Home = () => {
   return (
     <div style={{ backgroundImage: `url(${Nature})` }} className="background-image">
       <Container fixed>
-        <Box className="Home-center">
+        <Box className="center-contents" sx={{ height: '100vh' }}>
           <Typography
             variant="h2"
             align="center"
             color="tertiary.main"
             sx={{ fontWeight: 'bold', padding: "10px" }}>
-            <e className="primary-color">Timothy </e>
+            <bdo sx={{ fontStyle: 'normal' }} className="primary-color">Timothy </bdo>
             Yu Zhiwen
           </Typography>
           <Typography

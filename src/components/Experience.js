@@ -1,22 +1,35 @@
 import * as React from 'react';
 import '../styles/Colors.scss'
-import '../styles/About.scss'
-import Me from '../assets/Me.png';
+import '../styles/Section.scss'
+import ExperienceTimeline from './ExperienceTimeline.js'
 
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
-import Link from '@mui/material/Link';
 
 const Experience = () => {
   // Functions
 
   // HTML
   return (
-    <div className="secondary-background-color">
+    <div className="tertiary-background-color center-contents" style={{ height: 1100 }}>
       <Container fixed>
+        <Typography
+          variant="h3"
+          align="center"
+          color="secondary.main"
+          sx={{ fontWeight: 'bold', paddingTop: '20px', paddingBottom: '10px' }}>
+          My <bdo className="primary-color">Experience</bdo>
+        </Typography>
+        <Typography
+          variant="h6"
+          align="center"
+          color="secondary.main"
+          sx={{ paddingBottom: '15px' }}>
+          Here's a little bit more about my work and education experience.
+        </Typography>
+        <ExperienceTimeline />
       </Container>
     </div>
   );

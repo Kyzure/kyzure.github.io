@@ -2,6 +2,7 @@ $primary-color: #F25A52;
 $secondary-color: #343434;
 $secondary-color-light: #404040;
 $tertiary-color: #F4F4F4;
+$text-color: #989898;
 
 .primary-color {
   color: $primary-color
@@ -13,6 +14,10 @@ $tertiary-color: #F4F4F4;
 
 .tertiary-color {
   color: $tertiary-color;
+}
+
+.text-color {
+  background-color: $text-color;
 }
 
 .primary-background-color {
@@ -29,4 +34,8 @@ $tertiary-color: #F4F4F4;
 
 .tertiary-background-color {
   background-color: $tertiary-color;
+}
+
+.text-background-color {
+  background-color: $text-color;
 }

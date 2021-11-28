@@ -1,5 +1,4 @@
 import * as React from 'react';
-import '../styles/Header.scss'
 import '../styles/Colors.scss'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -7,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-const sections = ['Home', 'About', 'Experiences', 'Projects', 'Activities', 'Contact'];
+const sections = ['Home', 'About', 'Experiences', 'Projects', 'Contact'];
 
 const section = 0;
 
@@ -23,10 +22,10 @@ const Header = () => {
       color="secondary">
       <Container maxWidth="xl">
         <Toolbar disableGutters variant="dense">
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="Header-menu">
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }} className="Header-menu">
             {sections.map((page) => (
               <Button
-                dense
+                variant="dense"
                 size="small"
                 key={page}
                 onClick={scrollToSection}
