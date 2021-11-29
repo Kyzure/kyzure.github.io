@@ -58,7 +58,7 @@ const About = () => {
           </Typography>
           <Grid container rowSpacing={4} alignItems="center" justifyContent="center" >
             {skills.map((skill) => (
-              <Grid item xs={2.4}>
+              <Grid item xs={2.4} key={skill}>
                 <SkillImage icon={ skill } />
               </Grid>
             ))}

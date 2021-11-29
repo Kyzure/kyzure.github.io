@@ -1,8 +1,9 @@
 $primary-color: #F25A52;
 $secondary-color: #343434;
 $secondary-color-light: #404040;
+$secondary-color-dark: #202020;
 $tertiary-color: #F4F4F4;
-$text-color: #989898;
+$text-color: #888888;
 
 .primary-color {
   color: $primary-color
@@ -12,12 +13,16 @@ $text-color: #989898;
   color: $secondary-color;
 }
 
+.secondary-color-light {
+  color: $secondary-color-light;
+}
+
 .tertiary-color {
   color: $tertiary-color;
 }
 
 .text-color {
-  background-color: $text-color;
+  color: $text-color;
 }
 
 .primary-background-color {
@@ -30,6 +35,10 @@ $text-color: #989898;
 
 .secondary-background-color-light {
   background-color: $secondary-color-light;
+}
+
+.secondary-background-color-dark {
+  background-color: $secondary-color-dark;
 }
 
 .tertiary-background-color {

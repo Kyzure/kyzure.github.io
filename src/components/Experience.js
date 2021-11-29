@@ -19,14 +19,14 @@ const Experience = () => {
           variant="h3"
           align="center"
           color="secondary.main"
-          sx={{ fontWeight: 'bold', paddingTop: '20px', paddingBottom: '10px' }}>
+          sx={{ fontWeight: 'bold', paddingTop: '20px', paddingBottom: '20px' }}>
           My <bdo className="primary-color">Experience</bdo>
         </Typography>
         <Typography
           variant="h6"
           align="center"
           color="secondary.main"
-          sx={{ paddingBottom: '15px' }}>
+          sx={{ paddingBottom: '25px' }}>
           Here's a little bit more about my work and education experience.
         </Typography>
         <ExperienceTimeline />

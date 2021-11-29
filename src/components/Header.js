@@ -8,12 +8,8 @@ import Button from '@mui/material/Button';
 
 const sections = ['Home', 'About', 'Experiences', 'Projects', 'Contact'];
 
-const section = 0;
-
-const Header = () => {
+const Header = (props) => {
   // Functions
-  const scrollToSection = () => {
-  };
 
   // HTML
   return (
@@ -23,15 +19,16 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters variant="dense">
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }} className="Header-menu">
-            {sections.map((page) => (
+            {sections.map((section) => (
               <Button
+                disableRipple={true}
                 variant="dense"
                 size="small"
-                key={page}
-                onClick={scrollToSection}
+                key={section}
+                onClick={(e) => props.scrollToSection(e, section)}
                 sx={{ 'paddingLeft': '10px', 'paddingRight': '10px', 'paddingTop': '5px', 'paddingBottom': '5px',}}
                 color="tertiary">
-                {page}
+                {section}
               </Button>
             ))}
           </Box>
