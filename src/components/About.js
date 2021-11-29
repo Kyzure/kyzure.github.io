@@ -12,7 +12,7 @@ import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 
-const skills = ['javascript', 'html', 'css', 'sass', 'react', 'vue', 'nodejs', 'csharp', 'python', 'java', 'unity', 'git', 'postgresql']
+const skills = ['javascript', 'html', 'css', 'sass', 'react', 'vue', 'csharp', 'python', 'java', 'unity', 'postgresql']
 
 const About = () => {
   // Functions
