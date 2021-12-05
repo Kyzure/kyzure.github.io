@@ -5,6 +5,7 @@ import '../styles/Colors.scss';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Header from '../components/Header.js';
 import Home from '../components/Home.js';
@@ -43,6 +44,16 @@ function App() {
   let expRef = useRef(null)
   let projectsRef = useRef(null)
   let contactRef = useRef(null)
+  let type = "xl"
+  const isMobile = useMediaQuery(theme.breakpoints.between('xs', 'sm'));
+  const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  if (isMobile) {
+    type = "sm"
+  } else if (isTablet) {
+    type = "md"
+  } else {
+    type = "lg"
+  }
    
   const scrollToSection = (e, section) => {
     if (section === 'Home') {
@@ -61,21 +72,23 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <ScopedCssBaseline enableColorScheme={true}>
-        <div>
-          <Header scrollToSection={ scrollToSection }/>
-        </div>
+        {!isMobile ? (
+          <div>
+            <Header scrollToSection={ scrollToSection }/>
+          </div>
+        ):<div/>}
         <div className="secondary-background-color-light">
           <div ref={homeRef}>
-            <Home/>
+            <Home breakpoint={type}/>
           </div>
           <div ref={aboutRef}>
-            <About/>
+            <About breakpoint={type}/>
           </div>
           <div ref={expRef}>
-            <Experience/>
+            <Experience breakpoint={type}/>
           </div>
           <div ref={projectsRef}>
-            <Projects/>
+            <Projects breakpoint={type}/>
           </div>
           <div ref={contactRef}>
             <Contact/>

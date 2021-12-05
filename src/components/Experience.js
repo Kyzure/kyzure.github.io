@@ -8,12 +8,12 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 
-const Experience = () => {
+const Experience = (props) => {
   // Functions
 
   // HTML
   return (
-    <div className="tertiary-background-color center-contents" style={{ height: 1100 }}>
+    <div className="tertiary-background-color center-contents section-display section-padding">
       <Container fixed>
         <Typography
           variant="h3"
@@ -29,7 +29,7 @@ const Experience = () => {
           sx={{ paddingBottom: '25px' }}>
           Here's a little bit more about my work and education experience.
         </Typography>
-        <ExperienceTimeline />
+        <ExperienceTimeline breakpoint={props.breakpoint} />
       </Container>
     </div>
   );

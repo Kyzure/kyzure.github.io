@@ -18,7 +18,7 @@ const Home = () => {
 
   // HTML
   return (
-    <div style={{ backgroundImage: `url(${Nature})` }} className="background-image">
+    <div style={{ backgroundImage: `url(${Nature})` }} className="background-image section-display">
       <Container fixed>
         <Box className="center-contents" sx={{ height: '100vh' }}>
           <Typography

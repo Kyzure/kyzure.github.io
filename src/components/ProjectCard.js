@@ -32,16 +32,17 @@ const ProjectCard = (props) => {
   // HTML
   return (
     <Paper className={ classes.paperRoot } sx={{ padding: "30px 20px 30px 20px" }} variant="elevation" elevation={4}>
-      <Stack direction="row" spacing={4}>
-        {demoLink !== null ? (
-          <Button sx={{ width: '440px', height: '247.5px' }} variant="elevation" elevation="4" href={ demoLink }>
+      <Stack direction={ props.breakpoint === "lg" ? "row" : "column" } spacing={4}>
+        {props.breakpoint !== "sm" ? (
+          <Paper sx={{ width: '440px', height: '247.5px' }} variant="elevation" elevation="4">
             <img src={ image } alt={ title } style={{ width: '440px', height: '247.5px' }} />
-          </Button>
-          ):(
-          <Button sx={{ width: '440px', height: '247.5px' }} variant="elevation" elevation="4" href={ githubLink }>
-            <img src={ image } alt={ title } style={{ width: '440px', height: '247.5px' }} />
-          </Button>)}
-        <Box sx={{ width: '500px' }}>
+          </Paper>
+        ):(
+          <Paper sx={{ width: "85vw", height: "70vw / 16 * 9" }} variant="elevation" elevation="4">
+            <img src={ image } alt={ title } style={{ width: "100%", height: "100%" }} />
+          </Paper>
+        )}
+        <Box sx={{ width: props.breakpoint === "lg" ? "500px" : "100%"}}>
           <Typography
             variant="h5"
             color="tertiary.main"
